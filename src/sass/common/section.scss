@@ -1,6 +1,11 @@
 .section {
   &:not(.bg-decor) {
     padding: 10rem 0;
+    margin-bottom: 10rem;
+  }
+
+  &--mb-none {
+    margin-bottom: 0;
   }
 
   margin-bottom: 10rem;

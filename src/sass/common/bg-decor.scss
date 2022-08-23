@@ -33,4 +33,10 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &--bot-none {
+    &::after {
+      display: none;
+    }
+  }
 }

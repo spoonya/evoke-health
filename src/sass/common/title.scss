@@ -2,6 +2,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   line-height: 130%;
-  font-weight: 50;
+  font-weight: 500;
   font-size: 30px;
+  margin-bottom: 6rem;
+
+  &--center {
+    text-align: center;
+  }
 }

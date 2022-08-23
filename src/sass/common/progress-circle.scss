@@ -1,0 +1,46 @@
+.progress-circle {
+  position: relative;
+  height: 23rem;
+  width: 23rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+
+  path:last-child {
+    stroke-linecap: round;
+  }
+
+  &--progress-circle-up {
+    path:last-child {
+      stroke-linecap: round;
+    }
+  }
+
+  &__value {
+    position: relative;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    color: var(--purple-alpha);
+    margin-bottom: 5px;
+  }
+
+  &__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    max-width: 80%;
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    color: var(--black-alpha);
+    font-weight: 500;
+    line-height: 150%;
+  }
+}

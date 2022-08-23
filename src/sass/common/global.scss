@@ -124,8 +124,11 @@ html {
   --orange-alpha: #ffb800;
   --black-alpha: #121212;
   --black-beta: #444444;
+  --black-gamma: #000;
   --white-alpha: #ffffff;
   --white-beta: #fefefe;
+  --gray-alpha: #f6f7f9;
+  --gray-beta: #ebebeb;
 
   @include media-laptop {
     font-size: 55%;

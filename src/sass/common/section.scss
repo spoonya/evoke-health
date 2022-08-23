@@ -1,0 +1,11 @@
+.section {
+  margin-bottom: 6rem;
+
+  @include media-tablet-md {
+    margin-bottom: 40px;
+  }
+
+  @include media-tablet-sm {
+    margin-bottom: 30px;
+  }
+}

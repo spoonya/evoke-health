@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  block head
+    head
+      meta(charset="utf-8")
+      meta(name="description" content="Evoke Health descrip")
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet")
+
+      link(rel="stylesheet" href="assets/css/style.min.css")
+
+      block title
+        title Evoke Health
+  body
+    include ../mixins/common
+    .page
+      block header
+        include header
+      block content
+      block footer
+        include footer
+    block scripts
+      script(src='assets/js/main.js')

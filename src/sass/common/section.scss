@@ -1,5 +1,9 @@
 .section {
-  margin-bottom: 6rem;
+  &:not(.bg-decor) {
+    padding: 10rem 0;
+  }
+
+  margin-bottom: 10rem;
 
   @include media-tablet-md {
     margin-bottom: 40px;

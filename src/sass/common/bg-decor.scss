@@ -1,0 +1,36 @@
+.bg-decor {
+  margin: 88px 0;
+
+  &::before,
+  &::after {
+    height: 88px;
+  }
+
+  &::before {
+    position: relative;
+    display: block;
+    top: -88px;
+    margin-bottom: -88px;
+    padding-bottom: 12px;
+    content: '';
+    width: 100%;
+    background: url('../img/svg/section-decor-top.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: relative;
+    display: block;
+    bottom: -88px;
+    margin-top: -88px;
+    padding-top: 12px;
+    content: '';
+    width: 100%;
+    background: url('../img/svg/section-decor-bot.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

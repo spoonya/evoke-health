@@ -82,7 +82,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color: $color-white-alpha;
+    color: var(--black-alpha);
 
     &:hover {
       text-decoration: underline;

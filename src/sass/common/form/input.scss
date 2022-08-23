@@ -7,6 +7,6 @@
   letter-spacing: 0.02em;
 
   &:focus {
-    border-color: $color-white-alpha;
+    border-color: var(--white-alpha);
   }
 }

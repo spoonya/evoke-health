@@ -13,13 +13,13 @@
   overflow: hidden;
 
   &--text {
+    display: inline;
     color: var(--blue-alpha);
     background-color: none;
     padding: 0 1px;
     line-height: 100%;
     transition: color ease 0.3s;
     overflow: unset;
-    max-width: fit-content;
 
     &::before,
     &::after {

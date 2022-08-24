@@ -110,7 +110,7 @@ block content
             .solutions__line
             ul.solutions__list.list-reset
               li.solutions__list-item
-                div.solutions__list-item-img
+                .solutions__list-item-img
                   img(src="assets/img/svg/solutions-heart.svg", width="150" height="150" alt="" loading="lazy")
                 .solutions__list-item-descrip
                   h3.solutions__list-item-title Health Information
@@ -118,7 +118,7 @@ block content
                     p Proactively equip families with information and assure them that their loved ones are in good hands, while returning valuable time back to your staff.
                   a.button.button--text.solutions__list-item-link(href="#") Learn More
               li.solutions__list-item
-                div.solutions__list-item-img
+                .solutions__list-item-img
                   img(src="assets/img/svg/solutions-message.svg", width="150" height="150" alt="" loading="lazy")
                 .solutions__list-item-descrip
                   h3.solutions__list-item-title Secure Messaging
@@ -126,7 +126,7 @@ block content
                     p Save time for your clinical team by centralizing and streamlining communication with families with our secure HIPAA compliant messaging module.
                   a.button.button--text.solutions__list-item-link(href="#") Learn More
               li.solutions__list-item
-                div.solutions__list-item-img
+                .solutions__list-item-img
                   img(src="assets/img/svg/solutions-click.svg", width="150" height="150" alt="" loading="lazy")
                 .solutions__list-item-descrip
                   h3.solutions__list-item-title Appointment booking
@@ -134,7 +134,7 @@ block content
                     p Easily integrate an online booking tool that allow families to view upcoming resident appointments, book visitations, respond to care conferences, and record it in the EHR with a push of a button.
                   a.button.button--text.solutions__list-item-link(href="#") Learn More
               li.solutions__list-item
-                div.solutions__list-item-img
+                .solutions__list-item-img
                   img(src="assets/img/svg/solutions-reminder.svg", width="150" height="150" alt="" loading="lazy")
                 .solutions__list-item-descrip
                   h3.solutions__list-item-title Care Conference Reminders
@@ -142,7 +142,7 @@ block content
                     p Bring staff and families together for care conferences by automatically sending care conference reminders to the families.
                   a.button.button--text.solutions__list-item-link(href="#") Learn More
               li.solutions__list-item
-                div.solutions__list-item-img
+                .solutions__list-item-img
                   img(src="assets/img/svg/solutions-info.svg", width="150" height="150" alt="" loading="lazy")
                 .solutions__list-item-descrip
                   h3.solutions__list-item-title Mass Announcements
@@ -150,7 +150,7 @@ block content
                     p Share information with residents and their families to keep everyone up to date of important community communications and ensure regulatory compliance.
                   a.button.button--text.solutions__list-item-link(href="#") Learn More
               li.solutions__list-item
-                div.solutions__list-item-img
+                .solutions__list-item-img
                   img(src="assets/img/svg/solutions-share.svg", width="150" height="150" alt="" loading="lazy")
                 .solutions__list-item-descrip
                   h3.solutions__list-item-title Document Sharing
@@ -158,10 +158,80 @@ block content
                     p Allow sharing of sensitive documents between families and care team that will help deliver resident centered care.
                   a.button.button--text.solutions__list-item-link(href="#") Learn More
               li.solutions__list-item
-                div.solutions__list-item-img
+                .solutions__list-item-img
                   img(src="assets/img/svg/solutions-hands.svg", width="150" height="150" alt="" loading="lazy")
                 .solutions__list-item-descrip
                   h3.solutions__list-item-title Onboarding
                   .text.solutions__list-item-text
                     p Get started with just 5 clicks with no download, installation, or infrastructure required for setup and use, making our platform easily scalable and provide better customer and user experience.
                   a.button.button--text.solutions__list-item-link(href="#") Learn More
+
+    section.slider.section
+      .container
+        .slider__top
+          h2.title.slider__title Testimonials
+          .slider__controls
+            button.slider__button.slider__button--prev(data-slider-prev)
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_662_1391)">
+                <path d="M5.64953 14.3348H24.3171M5.64953 14.3348L12.7206 7.26372M5.64953 14.3348L12.7206 21.4059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_662_1391">
+                <rect width="19.2" height="19.2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 14.1348 0.758301)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            button.slider__button.slider__button--next(data-slider-next)
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_662_1391)">
+                <path d="M5.64953 14.3348H24.3171M5.64953 14.3348L12.7206 7.26372M5.64953 14.3348L12.7206 21.4059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_662_1391">
+                <rect width="19.2" height="19.2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 14.1348 0.758301)"/>
+                </clipPath>
+                </defs>
+              </svg>
+        .slider__inner
+          #swiper-testimonials.swiper.slider__content
+            .swiper-wrapper
+              .swiper-slide.slider__item
+                .slider__item-img
+                  img(src="assets/img/jpg/testimonials-1.jpg", width="100" height="100" alt="")
+                .text.slider__item-text
+                  p The phone calls have decreased on therapy's end and there seems to be less confusion on who to speak to talk about medical things when we are talking with the families.
+                .text.slider__item-author
+                  span.slider__item-author-name Vicki Williamson,&nbsp;
+                  span Director of Therapy
+              .swiper-slide.slider__item
+                .slider__item-img
+                  img(src="assets/img/jpg/testimonials-2.jpg", width="100" height="100" alt="")
+                .text.slider__item-text
+                  p We could never keep up with questions from families without the messaging. I have also found there to be a significant decrease in phone calls. Especially when there is simple question to ask, we can shoot back a quick reply.
+                .text.slider__item-author
+                  span.slider__item-author-name Shannon Durante,&nbsp;
+                  span Assistant Director of Nursing
+              .swiper-slide.slider__item
+                .slider__item-img
+                  img(src="assets/img/jpg/testimonials-3.jpg", width="100" height="100" alt="")
+                .text.slider__item-text
+                  p I have definitely noticed a decreased amount of phone calls. Families being able to see health information has been a big help.
+                .text.slider__item-author
+                  span.slider__item-author-name Kelly Moore,&nbsp;
+                  span Director of Nursing
+              .swiper-slide.slider__item
+                .slider__item-img
+                  img(src="assets/img/jpg/testimonials-4.jpg", width="100" height="100" alt="")
+                .text.slider__item-text
+                  p Wow I like everything about this service! This is so helpful, informative and really keeps me as a loved one up to date and my mind is at ease regarding my husband's care. It's really an awesome service, technology can be so wonderful, and this was created perfectly.
+                .text.slider__item-author
+                  span.slider__item-author-name Family member
+              .swiper-slide.slider__item
+                .slider__item-img
+                  img(src="assets/img/jpg/test.jpg", width="100" height="100" alt="")
+                .text.slider__item-text
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed necessitatibus dolor quas nam, eos ipsa ad voluptate, labore iusto eius repellendus exercitationem est praesentium architecto doloremque cupiditate odio magnam?
+                .text.slider__item-author
+                  span.slider__item-author-name Shannon Durante,&nbsp;
+                  span Assistant Director of Nursing

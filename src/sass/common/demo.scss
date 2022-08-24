@@ -1,0 +1,37 @@
+.demo {
+  background-image: url('../img/svg/bg-purple.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.demo__inner {
+  justify-content: space-between;
+  display: flex;
+  gap: 40px;
+  padding-right: 28rem;
+}
+
+.demo__descrip {
+  max-width: 69.6rem;
+  width: 100%;
+}
+
+.demo__title {
+  margin-bottom: 4rem;
+  line-height: 130%;
+  color: var(--white-beta);
+  font-size: 4.8rem;
+
+  span {
+    line-height: 120%;
+    text-transform: uppercase;
+    font-size: 6.4rem;
+    color: var(--orange-alpha);
+  }
+}
+
+.demo__img {
+  max-width: 52rem;
+  width: 100%;
+}

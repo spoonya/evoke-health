@@ -5,7 +5,9 @@
   }
 
   &--mb-none {
-    margin-bottom: 0;
+    &:not(.bg-decor) {
+      margin-bottom: 0;
+    }
   }
 
   margin-bottom: 10rem;

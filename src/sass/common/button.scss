@@ -86,19 +86,28 @@
     }
 
     &:hover {
-      &:not(.button--text) {
-        background-color: var(--purple-alpha);
+      background-color: var(--purple-alpha);
 
-        &::before {
-          transform: translateX(300px) skewX(-15deg);
-          opacity: 0.6;
-          transition: 0.7s;
-        }
-        &::after {
-          transform: translateX(300px) skewX(-15deg);
-          opacity: 1;
-          transition: 0.7s;
-        }
+      &::before {
+        transform: translateX(300px) skewX(-15deg);
+        opacity: 0.6;
+        transition: 0.7s;
+      }
+      &::after {
+        transform: translateX(300px) skewX(-15deg);
+        opacity: 1;
+        transition: 0.7s;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: var(--orange-alpha);
+    color: var(--black-alpha);
+
+    &:hover {
+      &:not(.button--text) {
+        background-color: var(--white-alpha);
       }
     }
   }

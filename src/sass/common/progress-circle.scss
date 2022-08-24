@@ -10,13 +10,21 @@
     stroke-linecap: round;
   }
 
-  &--progress-circle-up {
+  &--up {
     path:last-child {
       stroke-linecap: round;
+    }
+
+    .progress-circle__value {
+      &::before {
+        transform: rotate(180deg);
+      }
     }
   }
 
   &__value {
+    display: flex;
+    align-items: center;
     position: relative;
     font-weight: 500;
     font-size: 30px;
@@ -24,6 +32,13 @@
     letter-spacing: 0.05em;
     color: var(--purple-alpha);
     margin-bottom: 5px;
+
+    &::before {
+      display: inline-block;
+      content: url('../img/svg/arrow-down.svg');
+      height: 33px;
+      width: 33px;
+    }
   }
 
   &__info {

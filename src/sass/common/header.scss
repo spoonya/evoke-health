@@ -21,7 +21,9 @@
 }
 
 .header__menu {
-  margin-right: 6rem;
+  &:not(:last-child) {
+    margin-right: 6rem;
+  }
 }
 
 .header__menu-list {

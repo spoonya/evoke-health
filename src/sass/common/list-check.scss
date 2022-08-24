@@ -1,0 +1,16 @@
+.list-check {
+  li {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 150%;
+
+    &::before {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      height: 48px;
+      width: 48px;
+      content: url('../img/svg/check.svg');
+    }
+  }
+}

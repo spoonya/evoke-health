@@ -1,0 +1,47 @@
+.gains-list {
+  display: grid;
+  grid-gap: 2.4rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gains-list__item {
+  padding: 4rem;
+  text-align: center;
+  transition: background-color 0.1s linear;
+  border-radius: 20px;
+
+  &-title {
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--purple-alpha);
+    margin-bottom: 8px;
+
+    transition: color 0.1s linear;
+  }
+
+  &-img {
+    margin: 0 auto 8px;
+    max-width: 120px;
+    transition: filter 0.1s linear;
+  }
+
+  &-text {
+    transition: color 0.1s linear;
+  }
+
+  &:hover {
+    background-color: var(--purple-alpha);
+
+    .gains-list__item-title {
+      color: var(--white-beta);
+    }
+
+    .gains-list__item-text {
+      color: var(--white-beta);
+    }
+
+    .gains-list__item-img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

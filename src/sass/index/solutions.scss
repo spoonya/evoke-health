@@ -1,0 +1,115 @@
+.solutions__content {
+  position: relative;
+}
+
+.solutions__list {
+  padding: 0 8.6rem;
+}
+
+.solutions__list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  left: 50%;
+  flex-direction: row-reverse;
+
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
+  &:nth-child(even) {
+    left: unset;
+    right: 0;
+
+    .solutions__list-item {
+      &-descrip {
+        margin-left: 0;
+        margin-right: calc(100px - 4rem);
+        padding: 4rem 8rem 4rem 4rem;
+        text-align: right;
+      }
+
+      &-link {
+        display: inline;
+      }
+
+      &-img {
+        right: -100px;
+        left: unset;
+      }
+    }
+  }
+
+  &-img {
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    padding: 2.5rem;
+    background-color: var(--white-alpha);
+    box-shadow: 0px 5px 20px rgba(0, 49, 123, 0.07);
+    border-radius: 50%;
+    left: -100px;
+  }
+
+  &-descrip {
+    padding: 4rem 4rem 4rem 8rem;
+    border: 2px solid var(--white-gamma);
+    border-radius: 20px;
+    max-width: 69.6rem;
+    width: 100%;
+    margin-left: -4rem;
+
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: var(--purple-alpha);
+
+      .solutions__list-item {
+        &-title {
+          color: var(--white-alpha);
+        }
+
+        &-text {
+          color: var(--white-alpha);
+        }
+
+        &-link {
+          color: var(--white-alpha);
+
+          &::before,
+          &::after {
+            background-color: var(--white-alpha);
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--purple-alpha);
+    margin-bottom: 16px;
+
+    transition: color 0.2s linear;
+  }
+
+  &-text {
+    margin-bottom: 16px;
+    transition: color 0.2s linear;
+  }
+}
+
+.solutions__line {
+  position: absolute;
+  content: '';
+  top: 200px;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-alpha);
+}

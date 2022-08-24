@@ -1,7 +1,3 @@
-.engage {
-  background-color: var(--gray-alpha);
-}
-
 .engage__inner {
   display: flex;
   justify-content: space-between;
@@ -36,21 +32,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px 7.1rem;
   margin-bottom: 4rem;
-
-  li {
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 150%;
-
-    &::before {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 8px;
-      height: 48px;
-      width: 48px;
-      content: url('../img/svg/check.svg');
-    }
-  }
 }
 
 .engage__partner {

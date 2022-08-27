@@ -1,7 +1,7 @@
 .list-check {
   li {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 150%;
 
     &::before {
@@ -10,7 +10,20 @@
       margin-right: 8px;
       height: 48px;
       width: 48px;
-      content: url('../img/svg/check.svg');
+      content: '';
+      background: url('../img/svg/check.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @include media-tablet-lg {
+      font-size: 16px;
+
+      &::before {
+        background-size: 24px;
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }

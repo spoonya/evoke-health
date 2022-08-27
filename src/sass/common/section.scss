@@ -2,6 +2,10 @@
   &:not(.bg-decor) {
     padding: 10rem 0;
     margin-bottom: 10rem;
+
+    @include media-tablet-lg {
+      padding: 60px 0;
+    }
   }
 
   &--mb-none {

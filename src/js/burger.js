@@ -1,20 +1,21 @@
 import { CLASSES, DOM } from './constants';
 
-const burgerOpenBtn = document.querySelector('#burger-button');
-const burgerCloseBtn = document.querySelector('#burger-close');
-const burger = document.querySelector('#burger');
+const burgerBtn = document.querySelector('#burger-button');
+const header = document.querySelector('#header');
 
 function toggleBurger() {
-  burgerOpenBtn.addEventListener('click', function () {
-    DOM.body.classList.add(CLASSES.scrollHidden);
-    burger.classList.add(CLASSES.active);
-    this.classList.add(CLASSES.active);
+  burgerBtn.addEventListener('click', function () {
+    DOM.body.classList.toggle(CLASSES.scrollHidden);
+    header.classList.toggle(CLASSES.open);
+    DOM.overlay.classList.toggle(CLASSES.active);
+    this.classList.toggle(CLASSES.active);
   });
 
-  burgerCloseBtn.addEventListener('click', function () {
-    DOM.body.classList.remove(CLASSES.scrollHidden);
-    burger.classList.remove(CLASSES.active);
-    this.classList.remove(CLASSES.active);
+  DOM.overlay.addEventListener('click', function () {
+    DOM.body.classList.toggle(CLASSES.scrollHidden);
+    header.classList.toggle(CLASSES.open);
+    burgerBtn.classList.toggle(CLASSES.active);
+    this.classList.toggle(CLASSES.active);
   });
 }
 

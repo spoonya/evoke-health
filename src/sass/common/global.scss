@@ -133,7 +133,7 @@ html {
   --gray-alpha: #f6f7f9;
   --gray-beta: #ebebeb;
 
-  @include media-laptop {
+  @include media-desktop {
     font-size: 55%;
   }
 }
@@ -160,11 +160,15 @@ body {
 }
 
 .container {
-  max-width: 1734px;
+  max-width: 1764px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
+
+  @include media-laptop {
+    padding: 0 15px;
+  }
 }
 
 .overlay {

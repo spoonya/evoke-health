@@ -5,9 +5,10 @@
   color: var(--white-beta);
   letter-spacing: 0.05em;
   font-weight: 500;
+  line-height: 1;
   font-size: 16px;
   border-radius: 5px;
-  padding: 11px 30px;
+  padding: 16px 30px;
 
   transition: 0.6s;
   overflow: hidden;
@@ -110,5 +111,9 @@
         background-color: var(--white-alpha);
       }
     }
+  }
+
+  @include media-tablet-sm {
+    font-size: 14px;
   }
 }

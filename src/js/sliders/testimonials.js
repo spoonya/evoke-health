@@ -16,14 +16,16 @@ export const swiperTestimonials = new Swiper('#swiper-testimonials', {
   },
 
   breakpoints: {
-    320: {},
-    576: {
+    320: {
+      slidesPerView: 1
+    },
+    768: {
       slidesPerView: 2
     },
-    992: {
+    1024: {
       slidesPerView: 3
     },
-    1350: {
+    1366: {
       slidesPerView: 4
     }
   }

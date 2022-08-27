@@ -1,4 +1,4 @@
-export const swiperTestimonials = new Swiper('#swiper-testimonials', {
+export const swiperFeatured = new Swiper('#swiper-featured', {
   loop: false,
 
   spaceBetween: 24,

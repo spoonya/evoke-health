@@ -1,0 +1,32 @@
+.about-founders__item {
+  display: flex;
+  align-items: center;
+}
+
+.about-founders__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+}
+
+.about-founders__img {
+  max-width: 314px;
+}
+
+.about-founders__descrip {
+  max-width: 552px;
+  width: 100%;
+}
+
+.about-founders__title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.about-founders__name {
+  color: var(--purple-alpha);
+}
+
+.about-founders__position {
+  color: var(--black-beta);
+}

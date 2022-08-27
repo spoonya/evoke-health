@@ -73,6 +73,10 @@
     &:hover {
       color: var(--purple-alpha);
     }
+
+    &.active {
+      color: var(--purple-alpha);
+    }
   }
 
   @include media-tablet-sm {

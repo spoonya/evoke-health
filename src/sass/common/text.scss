@@ -2,4 +2,8 @@
   font-size: 16px;
   line-height: 150%;
   color: var(--black-beta);
+
+  p:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }

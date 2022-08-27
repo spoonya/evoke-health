@@ -1,0 +1,146 @@
+extends common/layout
+
+block title
+  title About Us
+
+block content
+  main
+    section.intro
+      .container
+        .intro__inner
+          .intro__descrip
+            h1.intro__title.intro__title--secondary This is Evoke Health
+            h2.intro__subtitle Our vision is to Build interconnected, efficient digital healthcare system that provides better health outcomes and happier patients.
+          .intro__img
+            img(src="assets/img/png/intro-2.png", width="984" height="880" alt="")
+
+    section.about-digital.section.bg-decor
+      .container
+        h2.title.title--center Building digital health for better care
+        .about-digital__content
+          .about-digital__text
+            p Evoke Health develops a digital IT solution for senior living homes. Everything we do at Evoke Health is around freeing up time for the staff at senior care homes so that they can make time for the work that matters most and is important to them.
+            p The way we do this is by automating and streamline indirect clinical care tasks and our product Engage<sup>+</sup> has been built to bring this vision to life.
+
+    section.about-founders.section
+      .container
+        h2.title.title--center Meet the fouders
+        .about-founders__inner
+          .about-founders__content
+            .about-founders__item
+              .about-founders__img
+                img(src="assets/img/png/founders-1.png", width="314" height="352" alt="" loading="lazy")
+              .about-founders__descrip
+                h3.about-founders__title
+                  span.about-founders__name Varsha Chaugai,&nbsp;
+                  span.about-founders__position Co-founder & CEO
+                .text
+                  p Varsha has 6 years of experience working in the medical device industry. She has worked as a biomedical instructor, hardware engineer, software tester, manufacturing engineer, and quality engineer for Class 2 and Class 3 medical devices. Varsha holds a M.A.Sc. in Biomedical Engineering.
+            .about-founders__item
+              .about-founders__img
+                img(src="assets/img/png/founders-2.png", width="314" height="352" alt="" loading="lazy")
+              .about-founders__descrip
+                h3.about-founders__title
+                  span.about-founders__name Graham Fraser,&nbsp;
+                  span.about-founders__position Co-founder & CTO
+                .text
+                  p Graham has 10 years of experience developing mobile and web applications used daily by millions of users. He has worked for technology companies including Microsoft and BlackBerry, and holds a M.A.Sc. in Biomedical Engineering, and a B.Eng. in Software Engineering.
+
+    section.slider.section.bg-decor
+      .container
+        .slider__inner
+          #swiper-advisors.swiper.slider__content
+            .slider__top
+              h2.title.slider__title Meet the advisors
+              .slider__controls
+                button.slider__button.slider__button--prev(data-slider-prev)
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_662_1391)">
+                    <path d="M5.64953 14.3348H24.3171M5.64953 14.3348L12.7206 7.26372M5.64953 14.3348L12.7206 21.4059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_662_1391">
+                    <rect width="19.2" height="19.2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 14.1348 0.758301)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                button.slider__button.slider__button--next(data-slider-next)
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_662_1391)">
+                    <path d="M5.64953 14.3348H24.3171M5.64953 14.3348L12.7206 7.26372M5.64953 14.3348L12.7206 21.4059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_662_1391">
+                    <rect width="19.2" height="19.2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 14.1348 0.758301)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+            .swiper-wrapper
+              .swiper-slide.slider__item
+                .slider__item-img
+                  img(src="assets/img/jpg/advisors-1.jpg", width="100" height="100" alt="")
+                .text.slider__item-text
+                  p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolores rerum, et, inventore corrupti iure repellat nihil praesentium sint est nemo maxime ipsam quo illum fugiat fugit alias eaque dolorem.
+                .text.slider__item-author
+                  span.slider__item-author-name Family Doctor,&nbsp;
+                  span Entrepreneur, Mother
+              .swiper-slide.slider__item
+                .slider__item-img
+                  img(src="assets/img/jpg/advisors-2.jpg", width="100" height="100" alt="")
+                .text.slider__item-text
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam cumque recusandae esse perspiciatis ducimus dicta laborum modi pariatur excepturi?
+                .text.slider__item-author
+                  span.slider__item-author-name Family Doctor,&nbsp;
+                  span Entrepreneur, Mother
+
+    section.slider.about-featured.section.section--mb-none
+      .container
+        .slider__inner
+          #swiper-featured.swiper
+            .slider__top.about-featured__top
+              h2.title.slider__title Proudly featured in
+              .slider__controls
+                button.slider__button.slider__button--prev(data-slider-prev)
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_662_1391)">
+                    <path d="M5.64953 14.3348H24.3171M5.64953 14.3348L12.7206 7.26372M5.64953 14.3348L12.7206 21.4059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_662_1391">
+                    <rect width="19.2" height="19.2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 14.1348 0.758301)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                button.slider__button.slider__button--next(data-slider-next)
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_662_1391)">
+                    <path d="M5.64953 14.3348H24.3171M5.64953 14.3348L12.7206 7.26372M5.64953 14.3348L12.7206 21.4059" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_662_1391">
+                    <rect width="19.2" height="19.2" transform="matrix(-0.707107 0.707107 0.707107 0.707107 14.1348 0.758301)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+            .swiper-wrapper
+              .swiper-slide
+                img(src="assets/img/png/featured-1.png", width="408" height="100" alt="")
+              .swiper-slide
+                img(src="assets/img/png/featured-2.png", width="408" height="100" alt="")
+              .swiper-slide
+                img(src="assets/img/png/featured-3.png", width="408" height="100" alt="")
+              .swiper-slide
+                img(src="assets/img/png/featured-4.png", width="408" height="100" alt="")
+              .swiper-slide
+                img(src="assets/img/png/featured-2.png", width="408" height="100" alt="")
+
+    section.demo
+      .container
+        .demo__inner
+          .demo__content
+            .demo__descrip
+              h2.demo__title <span>Discover how Engage+ can help</span> your staff make time for the work that matters most!
+              button.button.button--secondary schedule a demo
+            .demo__img
+              img(src="assets/img/png/demo.png", width="520" height="382" alt="" loading="lazy")
+          button#scroll-top.to-top scroll to top

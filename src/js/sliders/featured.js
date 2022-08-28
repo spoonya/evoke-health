@@ -25,9 +25,6 @@ export const swiperFeatured = new Swiper('#swiper-featured', {
     768: {
       slidesPerView: 3
     },
-    // 1024: {
-    //   slidesPerView: 3
-    // },
     1366: {
       slidesPerView: 4
     }

@@ -25,10 +25,8 @@
   display: flex;
   gap: 80px;
   margin-bottom: 16px;
-  padding-right: 28rem;
 
   @include media-desktop {
-    padding-right: 0;
     gap: 40px;
   }
 
@@ -83,8 +81,16 @@
 }
 
 .demo__img {
-  max-width: 52rem;
-  width: 100%;
+  max-width: 100%;
+  padding-right: 28rem;
+
+  &--secondary {
+    padding-right: 0;
+  }
+
+  @include media-desktop {
+    padding-right: 0;
+  }
 
   @include media-tablet-sm {
     max-width: 288px;

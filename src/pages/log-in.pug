@@ -1,0 +1,38 @@
+extends common/layout
+
+block title
+  title Log in
+
+block content
+  main
+    section.log-in
+      .container
+        h1.title.title--secondary.title--center.log-in__title ENGAGE<sup>+</sup> Log in
+        .log-in__inner
+          form.form(method="POST" name="log-in")
+            .form__content.log-in__form-content
+              .form__inputs.log-in__inputs
+                label.control.form__control
+                  input.input.control__input(type="email" data-input required)
+                  span.control__label Email
+                  span.control__error Error message
+                label.control.form__control(data-control)
+                  input.input.input--password.control__input(type="password" data-input required)
+                  span.control__label Password
+                  span.control__error Error message
+                  button.control__password-toggle(data-password-toggle type="button")
+                    <svg class="control__password-toggle-show" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12V12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M2.45801 12C3.73201 7.943 7.52301 5 12 5C16.478 5 20.268 7.943 21.542 12C20.268 16.057 16.478 19 12 19C7.52301 19 3.73201 16.057 2.45801 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="control__password-toggle-hide" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.875 18.825C13.2569 18.9419 12.6291 19.0005 12 19C7.52203 19 3.73203 16.057 2.45703 12C2.8003 10.9081 3.32902 9.88346 4.02003 8.971M9.87803 9.879C10.4407 9.31634 11.2038 9.00025 11.9995 9.00025C12.7952 9.00025 13.5584 9.31634 14.121 9.879C14.6837 10.4417 14.9998 11.2048 14.9998 12.0005C14.9998 12.7962 14.6837 13.5593 14.121 14.122M9.87803 9.879L14.121 14.122M9.87803 9.879L14.12 14.12M14.121 14.122L17.412 17.412M9.88003 9.88L6.59003 6.59M6.59003 6.59L3.00003 3M6.59003 6.59C8.20239 5.54957 10.0811 4.9974 12 5C16.478 5 20.268 7.943 21.543 12C20.8391 14.2305 19.3774 16.1446 17.411 17.411M6.59003 6.59L17.411 17.411M17.411 17.411L21 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            a.log-in__forgot(href="reset-password.html") forgot your password?
+            button.button.log-in__submit.form__submit(type="submit") Log in
+            .log-in__decor or
+            a.button.button--outline.log-in__link
+              span Log in with PointClickCare
+            .need-help
+              span Need help?
+              a.button.button--text(href="contact.html") Contact us

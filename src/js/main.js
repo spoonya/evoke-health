@@ -6,6 +6,7 @@ import { scrollToTop } from './scroll-to-top';
 import { controlSelect } from './select';
 import * as sliders from './sliders';
 import { controlScrollProgress } from './solutions-progress';
+import { initPasswordToggle } from './password';
 
 controlHeaderBurger();
 initProgressBars();
@@ -14,3 +15,4 @@ controlScrollProgress();
 addClassToEvenProductItems();
 controlInput();
 controlSelect();
+initPasswordToggle();

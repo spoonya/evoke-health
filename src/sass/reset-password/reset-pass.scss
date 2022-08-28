@@ -1,0 +1,31 @@
+.reset-pass {
+  padding: 6rem 0;
+
+  @include media-tablet-sm {
+    padding: 40px 0;
+  }
+}
+
+.reset-pass__text {
+  text-align: center;
+  max-width: 388px;
+  margin: 0 auto 24px;
+}
+
+.reset-pass__title {
+  margin-bottom: 16px;
+}
+
+.reset-pass__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-pass__form-content {
+  margin-bottom: 0;
+}
+
+.reset-pass__alert {
+  color: var(--green-alpha);
+  margin-bottom: 24px;
+}

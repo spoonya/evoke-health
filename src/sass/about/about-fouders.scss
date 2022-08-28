@@ -1,16 +1,36 @@
 .about-founders__item {
   display: flex;
   align-items: center;
+
+  @include media-tablet-sm {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .about-founders__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
+
+  @include media-laptop {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 60px;
+  }
+
+  @include media-tablet-sm {
+    grid-gap: 60px;
+  }
 }
 
 .about-founders__img {
+  min-width: 314px;
   max-width: 314px;
+
+  @include media-tablet-sm {
+    min-width: unset;
+    max-width: 288px;
+  }
 }
 
 .about-founders__descrip {
@@ -21,6 +41,10 @@
 .about-founders__title {
   font-size: 20px;
   margin-bottom: 16px;
+
+  @include media-tablet-sm {
+    font-size: 18px;
+  }
 }
 
 .about-founders__name {

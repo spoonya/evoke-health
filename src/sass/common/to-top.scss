@@ -30,6 +30,7 @@
   &:hover {
     &::after {
       background-image: url('../img/svg/arrow-up-light.svg');
+      background-size: 35px;
       background-position: center;
       background-repeat: no-repeat;
       background-color: var(--orange-alpha);

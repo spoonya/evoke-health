@@ -12,4 +12,14 @@
   p:not(:last-child) {
     margin-bottom: 16px;
   }
+
+  @include media-tablet-lg {
+    font-size: 16px;
+  }
+}
+
+.about-digital__title {
+  @include media-tablet-lg {
+    margin-bottom: 24px;
+  }
 }

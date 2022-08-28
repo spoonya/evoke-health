@@ -19,12 +19,15 @@ export const swiperFeatured = new Swiper('#swiper-featured', {
     320: {
       slidesPerView: 1
     },
-    768: {
+    480: {
       slidesPerView: 2
     },
-    1024: {
+    768: {
       slidesPerView: 3
     },
+    // 1024: {
+    //   slidesPerView: 3
+    // },
     1366: {
       slidesPerView: 4
     }

@@ -3,11 +3,16 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12rem;
+  gap: 30px;
 }
 
 .slider__controls {
   display: flex;
   gap: 3.5rem;
+
+  @include media-tablet-sm {
+    gap: 16px;
+  }
 }
 
 .slider__title {

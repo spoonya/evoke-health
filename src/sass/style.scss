@@ -13,8 +13,8 @@
 @import 'common/burger-button';
 @import 'common/visually-hidden';
 @import 'common/swiper';
-@import 'common/intro';
 @import 'common/bg-decor';
+@import 'common/intro';
 @import 'common/logo';
 @import 'common/list-check';
 @import 'common/slider';
@@ -24,7 +24,10 @@
 @import 'common/burger-button';
 @import 'common/to-top';
 @import 'common/footer';
+@import 'common/form/form';
 @import 'common/form/input';
+@import 'common/form/control';
+@import 'common/form/select';
 
 @import 'index/engage';
 @import 'index/why';
@@ -35,3 +38,5 @@
 @import 'about/about-featured';
 
 @import 'product/product-info';
+
+@import 'contact/contact';

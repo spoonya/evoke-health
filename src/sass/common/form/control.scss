@@ -1,0 +1,61 @@
+.control {
+  position: relative;
+  display: block;
+
+  &.error {
+    .control__input {
+      border-color: var(--red-alpha);
+    }
+
+    .control__input {
+      &:focus {
+        & + .control__label {
+          color: var(--red-alpha);
+        }
+      }
+    }
+
+    .control__error {
+      display: block;
+    }
+  }
+}
+
+.control__label {
+  position: absolute;
+  display: block;
+
+  cursor: text;
+
+  top: 50%;
+  left: 16px;
+
+  padding: 0 5px;
+  margin: 0 -5px;
+
+  transform: translateY(-50%);
+
+  transition: transform 0.2s, color 0.2s;
+}
+
+.control__input {
+  &:focus,
+  &.not-empty {
+    & + .control__label,
+    & > .control__label {
+      font-size: 12px;
+      color: var(--purple-alpha);
+      transform: translateY(-39px) scale(0.95);
+      background-color: var(--white-alpha);
+    }
+  }
+}
+
+.control__error {
+  position: absolute;
+  display: none;
+  bottom: -18px;
+  left: 16px;
+  font-size: 12px;
+  color: var(--red-alpha);
+}

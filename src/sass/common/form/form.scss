@@ -1,0 +1,22 @@
+.form {
+  max-width: 552px;
+  width: 100%;
+}
+
+.form__control {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.form__inputs {
+  margin-bottom: 24px;
+}
+
+.form__content {
+  margin-bottom: 4rem;
+}
+
+.form__submit {
+  width: 100%;
+}

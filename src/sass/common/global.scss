@@ -62,7 +62,7 @@ input,
 textarea {
   font: inherit;
 
-  color: var(--white-alpha);
+  color: var(--black-alpha);
 
   border: none;
   background: none;
@@ -78,7 +78,7 @@ input[type='button'] {
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
-  color: rgba(#fff, 1);
+  color: rgba(#000, 1);
 }
 
 button {
@@ -130,8 +130,10 @@ html {
   --white-beta: #fefefe;
   --white-gamma: #eeeeee;
   --white-psi: #f5f5f5;
+  --white-omega: #edfaff;
   --gray-alpha: #f6f7f9;
   --gray-beta: #ebebeb;
+  --red-alpha: #b3261e;
 
   @include media-desktop {
     font-size: 55%;

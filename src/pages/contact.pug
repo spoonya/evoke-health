@@ -1,0 +1,49 @@
+extends common/layout
+
+block title
+  title Contact
+
+block content
+  main
+    section.contact
+      .container
+        .contact__top
+          h1.contact__title Getting in touch with us is easy
+          button.button Book a demo
+        .contact__content
+          h2.contact__content-title <span>Let’s keep</span> your nurses off the phone!
+          form.form.contact__form(method="POST" name="contact-us")
+            .form__content
+              .form__inputs
+                label.control.form__control
+                  input.input.control__input(type="text" data-input required)
+                  span.control__label Name
+                  span.control__error Error message
+                label.control.form__control
+                  input.input.control__input(type="email" data-input required)
+                  span.control__label Email
+                  span.control__error Error message
+                .select.control.form__control(data-select)
+                  .select__options(data-select-options)
+                    .select__option(data-select-option)
+                      label
+                        input(type="radio" name="subject[]" value="0")
+                        |Demo
+                    .select__option(data-select-option)
+                      label
+                        input(type="radio" name="subject[]" value="1")
+                        |Case Study
+                    .select__option(data-select-option)
+                      label
+                        input(type="radio" name="subject[]" value="2")
+                        |Other
+                  button.input.control__input.select__selected(data-select-selected type="button")
+                    span.control__label.select__label Subject
+                    span(data-select-selected-label)
+                label.control.form__control
+                  input.input.control__input(type="text" data-input)
+                  span.control__label Message
+                  span.control__error Error message
+              .text
+                p Please check your junk email folder if you haven't heard from us <br> in 1-2 business days.
+            button.button.form__submit(type="submit") Get in touch

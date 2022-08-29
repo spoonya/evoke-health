@@ -1,5 +1,13 @@
 .select {
   position: relative;
+
+  &.active {
+    .select__selected {
+      &::after {
+        transform: rotateX(180deg) translateY(50%);
+      }
+    }
+  }
 }
 
 .select__options {
@@ -23,12 +31,6 @@
     opacity: 1;
     overflow-y: auto;
     pointer-events: all;
-
-    & + .select__selected {
-      &::after {
-        transform: rotateX(180deg) translateY(50%);
-      }
-    }
   }
 }
 

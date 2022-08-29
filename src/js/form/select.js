@@ -1,4 +1,4 @@
-import { CLASSES } from './constants';
+import { CLASSES } from '../constants';
 
 export function controlSelect() {
   const selectedList = document.querySelectorAll('[data-select-selected]');
@@ -11,6 +11,12 @@ export function controlSelect() {
     const optionsContainer = dropdown.querySelector('[data-select-options]');
     let isSelected = false;
 
+    selected.addEventListener('click', () => {
+      dropdown.classList.toggle(CLASSES.active);
+      optionsContainer.classList.toggle(CLASSES.active);
+      selected.classList.add(CLASSES.notEmpty);
+    });
+
     optionsContainer.addEventListener('click', (e) => {
       const option = e.target.closest('[data-select-option]');
 
@@ -22,13 +28,9 @@ export function controlSelect() {
 
       selectedLabel.textContent = option.querySelector('label').innerText;
       optionsContainer.classList.remove('active');
+      dropdown.classList.remove(CLASSES.active);
 
       isSelected = true;
-    });
-
-    selected.addEventListener('click', () => {
-      optionsContainer.classList.toggle(CLASSES.active);
-      selected.classList.add(CLASSES.notEmpty);
     });
 
     window.addEventListener('click', (e) => {
@@ -42,6 +44,7 @@ export function controlSelect() {
 
       if (optionsContainer.classList.contains(CLASSES.active)) {
         optionsContainer.classList.remove(CLASSES.active);
+        dropdown.classList.remove(CLASSES.active);
       }
     });
   });

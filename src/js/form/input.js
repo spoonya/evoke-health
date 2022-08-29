@@ -1,4 +1,4 @@
-import { CLASSES } from './constants';
+import { CLASSES } from '../constants';
 
 export function controlInput() {
   const inputs = document.querySelectorAll('[data-input]');

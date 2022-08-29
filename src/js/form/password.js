@@ -1,6 +1,6 @@
-import { CLASSES, DATA_ATTR } from './constants';
+import { CLASSES, DATA_ATTR } from '../constants';
 
-export function initPasswordToggle() {
+export function controlPasswordToggle() {
   const passwordToggles = document.querySelectorAll(DATA_ATTR.passwordToggle);
 
   if (!passwordToggles.length) return;

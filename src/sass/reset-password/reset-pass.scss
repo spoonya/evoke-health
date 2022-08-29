@@ -21,11 +21,11 @@
   justify-content: center;
 }
 
-.reset-pass__form-content {
-  margin-bottom: 0;
-}
-
 .reset-pass__alert {
   color: var(--green-alpha);
+  margin-bottom: 24px;
+}
+
+.reset-pass__submit {
   margin-bottom: 24px;
 }

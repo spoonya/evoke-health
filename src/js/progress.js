@@ -50,10 +50,29 @@ export function initProgressBars() {
     const value = container.querySelector('.progress-circle__value');
     const { progressEnd } = container.dataset;
     info.prepend(value);
-    progressBar.animate(
-      (!isToTop ? progressEnd * -1 : progressEnd) /
-        100 /
-        (progressMark === 'hrs' ? 2 : 1)
-    ); // values between 0-1
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+    const target = document.querySelector('#progress-circles');
+
+    const startProgressAnime = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          progressBar.animate(
+            (!isToTop ? progressEnd * -1 : progressEnd) /
+              100 /
+              (progressMark === 'hrs' ? 2 : 1)
+          ); // values between 0-1
+
+          observer.unobserve(target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(startProgressAnime, options);
+    observer.observe(target);
   });
 }

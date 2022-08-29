@@ -14,3 +14,9 @@ addClassToEvenProductItems();
 controlInput();
 controlSelect();
 controlPasswordToggle();
+
+AOS.init({
+  disable: 'mobile',
+  easing: 'ease',
+  once: true
+});

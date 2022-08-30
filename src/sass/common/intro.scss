@@ -322,34 +322,34 @@
       bottom: 15%;
       left: 5%;
     }
-  }
 
-  @include media-custom(1599.98px) {
-    li:nth-child(3) {
-      bottom: 5%;
-      left: 15%;
-    }
-  }
-
-  @include media-phone-sm {
-    li:nth-child(1) {
-      top: 2%;
-      left: 2%;
+    @include media-custom(1599.98px) {
+      li:nth-child(3) {
+        bottom: 5%;
+        left: 15%;
+      }
     }
 
-    li:nth-child(2) {
-      top: 15%;
-      right: -3%;
-    }
+    @include media-phone-sm {
+      li:nth-child(1) {
+        top: 2%;
+        left: 2%;
+      }
 
-    li:nth-child(3) {
-      bottom: 5%;
-      left: 5%;
-    }
+      li:nth-child(2) {
+        top: 15%;
+        right: -3%;
+      }
 
-    li:nth-child(4) {
-      bottom: 23%;
-      right: -3%;
+      li:nth-child(3) {
+        bottom: 5%;
+        left: 5%;
+      }
+
+      li:nth-child(4) {
+        bottom: 23%;
+        right: -3%;
+      }
     }
   }
 }

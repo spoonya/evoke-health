@@ -7,14 +7,13 @@ html(lang="en")
       meta(content="width=device-width, initial-scale=1" name="viewport")
       meta(content="ie=edge" http-equiv="x-ua-compatible")
 
+      link(href="assets/fonts/Poppins-Bold.woff2" as="font" rel="preload" type="font/woff2" crossorigin="anonymous")
+      link(href="assets/fonts/Poppins-Regular.woff2" as="font" rel="preload" type="font/woff2" crossorigin="anonymous")
+
       link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
       link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
 
       link(rel="stylesheet" href="assets/css/style.min.css")
-
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-      </style>
 
       block title
         title Evoke Health
@@ -27,7 +26,6 @@ html(lang="en")
       block footer
         include footer
       #overlay.overlay
-
     block scripts
       script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
       script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")

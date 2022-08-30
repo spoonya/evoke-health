@@ -91,14 +91,14 @@
       background-color: var(--purple-alpha);
 
       &::before {
-        transform: translateX(700px) skewX(-15deg);
+        transform: translateX(800px) skewX(-15deg);
         opacity: 0.6;
-        transition: 0.7s;
+        transition: 1.2s;
       }
       &::after {
-        transform: translateX(700px) skewX(-15deg);
+        transform: translateX(800px) skewX(-15deg);
         opacity: 1;
-        transition: 0.7s;
+        transition: 1.2s;
       }
     }
   }

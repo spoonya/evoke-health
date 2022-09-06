@@ -7,6 +7,7 @@ const shorthand = require('gulp-shorthand');
 const autoprefixer = require('gulp-autoprefixer');
 const gulpStylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
+const mediaGroup = require('gulp-group-css-media-queries');
 
 module.exports = function styles() {
   return gulp
@@ -44,6 +45,7 @@ module.exports = function styles() {
         }
       )
     )
+    .pipe(mediaGroup())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/assets/css'));

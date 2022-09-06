@@ -9,7 +9,7 @@
   gap: 24px;
 
   @include media-tablet-lg {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
     gap: 40px;
   }
@@ -25,7 +25,7 @@
       flex-direction: row-reverse;
 
       @include media-tablet-lg {
-        flex-direction: column;
+        flex-direction: column-reverse;
       }
     }
   }
@@ -120,6 +120,8 @@
   }
 
   &[open] {
+    margin-bottom: 20px;
+
     summary {
       position: absolute;
       bottom: -40px;

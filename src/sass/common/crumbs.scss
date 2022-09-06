@@ -1,0 +1,51 @@
+.crumbs {
+  margin: 3rem 0 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+
+    &:last-of-type {
+      span {
+        color: var(--black-alpha);
+        opacity: 0.7;
+        font-weight: 400;
+      }
+    }
+
+    &:not(:last-of-type) {
+      &::after {
+        display: inline-block;
+        content: '-';
+        margin: 0 7px;
+        opacity: 0.7;
+        color: var(--black-alpha);
+
+        @include media-phone-lg {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+
+  a {
+    color: var(--black-alpha);
+
+    transition: 0.1s color linear;
+
+    &:hover {
+      color: var(--purple-alpha);
+    }
+  }
+
+  a,
+  span {
+    font-size: 16px;
+  }
+}

@@ -1,10 +1,11 @@
-mixin crumbs(arrLinks, modif= null)
-  .crumbs(class= modif)
-    .crumbs__inner
-      ul
-        li: a(href='index.html') Главная
-        for link in arrLinks
-          if link.href
-            li: a(href= link.href)= link.name
-          else
-            li: span= link.name
+mixin crumbs(arrLinks)
+  .crumbs
+    .container
+      .crumbs__inner
+        ul.list-reset
+          li: a(href='index.html') Home
+          for link in arrLinks
+            if link.href
+              li: a(href= link.href)= link.name
+            else
+              li: span= link.name

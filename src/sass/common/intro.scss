@@ -1,6 +1,15 @@
 .intro {
+  &--negative-mt {
+    margin-top: -8rem;
+  }
+
   @include media-laptop {
     padding-bottom: 100px;
+    padding-top: 40px;
+
+    &--negative-mt {
+      margin-top: 0;
+    }
   }
 
   @include media-tablet-lg {
@@ -13,13 +22,9 @@
   align-items: center;
 
   @include media-laptop {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     gap: 60px;
-  }
-
-  @include media-tablet-lg {
-    gap: 40px;
   }
 }
 

@@ -5,6 +5,9 @@ block title
 
 block content
   main
+    +crumbs([
+      {href: '', name: 'Contact'}
+    ])
     section.contact
       .container
         .contact__top
@@ -18,7 +21,7 @@ block content
                 input.input.control__input(type="text" data-input required)
                 span.control__label Name
                 span.control__error Error message
-              label.control.form__control
+              label.control.form__control.error
                 input.input.control__input(type="email" data-input required)
                 span.control__label Email
                 span.control__error Error message

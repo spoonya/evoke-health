@@ -61,8 +61,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1",
-    "progressbar.js": "^1.1.0"
+    "normalize.css": "^8.0.1"
   },
   "editorconfig-cli": [
     "*.json",

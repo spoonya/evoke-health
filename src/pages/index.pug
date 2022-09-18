@@ -66,13 +66,13 @@ block content
         .why__inner
           .why__progress
             #progress-circles.why__progress-circles
-              .progress-circle(data-progress-circle data-progress-end="40")
+              .ldbar.progress-circle(data-progress-circle data-preset="circle" data-value="40" data-stroke-dir="reverse" data-transition-in style="width:23rem;height:23rem" data-stroke-width="9" data-stroke-trail-width="9" data-stroke="var(--orange-alpha)" data-stroke-trail="var(--gray-alpha)")
                 .progress-circle__info(data-progress-info)
                   p reduction in phone calls
-              .progress-circle(data-progress-circle data-progress-end="42" data-progress-mark="hrs")
+              .ldbar.progress-circle(data-progress-circle data-progress-mark="hrs" data-preset="circle" data-value="4.2" data-max="24" data-stroke-dir="reverse" data-precision="0.1" data-transition-in style="width:23rem;height:23rem" data-stroke-width="9" data-stroke-trail-width="9" data-stroke="var(--orange-alpha)" data-stroke-trail="var(--gray-alpha)")
                 .progress-circle__info(data-progress-info)
                   p per staff per week saved
-              .progress-circle.progress-circle--up(data-progress-circle data-progress-end="90")
+              .ldbar.progress-circle.progress-circle--up(data-progress-circle data-preset="circle" data-value="90" data-transition-in style="width:23rem;height:23rem" data-stroke-width="9" data-stroke-trail-width="9" data-stroke="var(--purple-alpha)" data-stroke-trail="var(--gray-alpha)")
                 .progress-circle__info(data-progress-info)
                   p family engagement per week
             .why__descrip

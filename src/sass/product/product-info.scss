@@ -6,21 +6,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
 
   @include media-tablet-lg {
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 40px;
-  }
-
-  @include media-tablet-sm {
-    gap: 24px;
   }
 }
 
 .product-info__item {
   &:nth-child(even) {
+    .product-info__item-img {
+      margin-right: 0;
+      margin-left: 24px;
+
+      @include media-tablet-lg {
+        margin: 40px auto 0;
+      }
+
+      @include media-tablet-sm {
+        margin: 24px auto 0;
+      }
+    }
+
     .product-info__inner {
       flex-direction: row-reverse;
 
@@ -38,14 +45,16 @@
 .product-info__item-img {
   max-width: 86.4rem;
   width: 100%;
+  margin-right: 24px;
 
   @include media-tablet-lg {
     max-width: 736px;
-    margin: 0 auto;
+    margin: 40px auto 0;
   }
 
   @include media-tablet-sm {
     max-width: 480px;
+    margin: 24px auto 0;
   }
 }
 

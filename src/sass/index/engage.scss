@@ -1,15 +1,9 @@
 .engage__inner {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 
   @include media-laptop {
     flex-direction: column-reverse;
-    gap: 60px;
-  }
-
-  @include media-tablet-sm {
-    gap: 24px;
   }
 }
 
@@ -18,9 +12,11 @@
   flex-direction: column;
   max-width: 81rem;
   width: 100%;
+  margin-right: 20px;
 
   @include media-laptop {
     max-width: unset;
+    margin-right: 0;
   }
 
   @include media-tablet-lg {
@@ -112,10 +108,15 @@
 
   @include media-desktop {
     max-width: 550px;
+    margin-bottom: 60px;
   }
 
   @include media-laptop {
     max-width: 484px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
+  }
+
+  @include media-tablet-sm {
+    margin-bottom: 24px;
   }
 }

@@ -3,20 +3,15 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12rem;
-  gap: 30px;
 }
 
 .slider__controls {
   display: flex;
-  gap: 3.5rem;
-
-  @include media-tablet-sm {
-    gap: 16px;
-  }
 }
 
 .slider__title {
   margin-bottom: 0;
+  margin-right: 30px;
 }
 
 .slider__content {
@@ -35,6 +30,10 @@
   width: 48px;
   overflow: hidden;
   transition: background-color 0.1s linear, border-color 0.1s linear;
+
+  &:not(:last-child) {
+    margin-right: 3.5rem;
+  }
 
   svg {
     transition: stroke 0.1s linear;
@@ -69,6 +68,12 @@
       height: 100%;
       width: 100%;
       border-radius: 50%;
+    }
+  }
+
+  @include media-tablet-sm {
+    &:not(:last-child) {
+      margin-right: 16px;
     }
   }
 }

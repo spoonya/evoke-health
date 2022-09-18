@@ -11,13 +11,16 @@
 
   @include media-tablet-sm {
     flex-direction: column;
-    gap: 16px;
     text-align: center;
   }
 }
 
 .footer__copy {
   color: var(--purple-alpha);
+
+  @include media-tablet-sm {
+    margin-bottom: 16px;
+  }
 }
 
 .footer__link {
